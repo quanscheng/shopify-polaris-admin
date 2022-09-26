@@ -5,6 +5,7 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
 import './App.css'
 import Main from './layouts/Main'
+import { Login } from './pages/Redirect/Login'
 import { Redirect } from './pages/Redirect/Redirect'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <RecoilRoot>
         <AppProvider i18n={en} linkComponent={polaris_link}>
           <Routes>
+            <Route path="/login" element={<Login />} />
             <Route path="/redirect" element={<Redirect />} />
             <Route path="/*" element={<Main />} />
           </Routes>

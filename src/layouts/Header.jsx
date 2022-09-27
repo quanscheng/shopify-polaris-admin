@@ -12,7 +12,7 @@ export const Header = () => {
     {
       items: [
         {
-          content: 'shopify app',
+          content: 'vite3 polaris',
           icon: CustomersMajor,
           onAction: handleLogout,
         },
@@ -26,7 +26,7 @@ export const Header = () => {
       userMenu={
         <TopBar.UserMenu
           actions={userMenuActions}
-          name="Transon"
+          name="vite3"
           // detail={storeName}
           // initials={'S'}
           customer

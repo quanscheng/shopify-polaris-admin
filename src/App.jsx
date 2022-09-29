@@ -1,12 +1,11 @@
 import { AppProvider } from '@shopify/polaris'
 import '@shopify/polaris/build/esm/styles.css'
-import en from '@shopify/polaris/locales/en.json'; // DropZone里面的文字依赖
+import en from '@shopify/polaris/locales/en.json' // DropZone里面的文字依赖
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
 import './App.css'
 import Main from './layouts/Main'
-import { Login } from './pages/Redirect/Login'
-import { Redirect } from './pages/Redirect/Redirect'
+import { Login, Redirect } from './pages/Redirect'
 
 function App() {
   return (
